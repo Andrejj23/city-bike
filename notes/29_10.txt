@@ -21,3 +21,7 @@ DATA CLEANING STEPS FOR CITI BIKE 2018 DATASET
 
 6.  Encode user type (optional) Convert usertype to numeric form if used
     in clustering (Subscriber, gender)
+
+Done
+
+1. Drop First column (the id one)

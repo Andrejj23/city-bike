@@ -1,0 +1,5 @@
+DATA CLEANING STEPS FOR CITI BIKE 2018 DATASET
+
+1.  Convert time columns to datetime Both starttime and stoptime should
+    be converted into datetime objects (datetime64 in pandas).
+    

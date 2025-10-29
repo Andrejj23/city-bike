@@ -26,11 +26,3 @@ DATA CLEANING STEPS FOR CITI BIKE 2018 DATASET
 Done
 
 1. Drop First column (the id one)
-
-2. Convert Date to datetime (with thenth of seconds included)
-
-3. NaN check
-
-4. Long Lan Check (Values from Canada)
-
-5. UserType to numerical (Subscriber, gender)

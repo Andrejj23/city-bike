@@ -15,7 +15,8 @@ DATA CLEANING STEPS FOR CITI BIKE 2018 DATASET
 4.  Remove invalid or extreme trip durations Filter out trips with
     unrealistic durations (0 sec or >24 hours).
 
-5.  Create a rounded datetime for weather merging If merging with hourly
+5.  (Not Yet)
+    Create a rounded datetime for weather merging If merging with hourly
     weather data, create an additional column:
     (For second part of the project)
 

@@ -209,5 +209,8 @@ marimo/_static/
 marimo/_lsp/
 __marimo__/
 
-#ignore cityvenv
+#ignore cityvenv For Thanos Venv
 cityvenv/
+
+# desktop.ini For Georges Windows Machine
+desktop.ini/

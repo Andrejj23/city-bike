@@ -214,3 +214,6 @@ cityvenv/
 
 # desktop.ini For Georges Windows Machine
 desktop.ini/
+
+#ignore Vasilis Datasets
+Vasilis/dataV/*

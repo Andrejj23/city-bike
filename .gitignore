@@ -218,3 +218,6 @@ desktop.ini
 
 #ignore Vasilis Datasets
 Vasilis/dataV/*
+Vasilis/monthly_graphs/*
+Vasilis/Station_Coordinates.csv
+Vasilis/2018_graph/*

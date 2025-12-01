@@ -225,3 +225,4 @@ Vasilis/2018_graph/*
 #Ignore CSV created 
 Final Notebooks/Station_Coordinates.csv
 Final Notebooks/Clustering_Data.csv
+Final Notebooks/cluster_hour_ts.csv

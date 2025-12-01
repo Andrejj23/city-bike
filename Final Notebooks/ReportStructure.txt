@@ -1,0 +1,26 @@
+Section 1: Introduction + motivation (0,5 pages)
+
+Section 2: Data analysis and visualization (1 page)
+
+	Argue about what our data includes
+	Map visualisation of the stations
+
+Section 3: Prediction Challenge (2 Pages)
+
+Clustering (Short Paragraph with metrics table - 0,5 pages) 
+	3.1 Meanshift
+ 	3.2 k-means
+ 	3.3 DBScan
+Present what methods were used and give the best perfoming one's results
+Add visualizations 
+
+Prediction Task II (Compare Time Series + Neural Networks - 1 Page)
+Prediction Task III (Net-flow - 0,5 page)
+
+
+Section 4: Exploratory Component (2 Pages)
+	4.1 Weather data     (0.7 Page)
+	4.2 Graph Embeddings (0.7 Page)
+	4.3 Weekdays/Weekend (0.6 Page)
+
+Section 5: Conclusions (0,5 Pages)

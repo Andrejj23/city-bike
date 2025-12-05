@@ -42,6 +42,7 @@ meteostat==1.7.6
 ml_dtypes==0.5.4
 namex==0.1.0
 nest-asyncio==1.6.0
+node2vec = 0.5.0
 numpy==2.3.4
 opt_einsum==3.4.0
 optree==0.18.0

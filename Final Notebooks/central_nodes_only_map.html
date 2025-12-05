@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_82e5dd511e11a12cdc215994b58267d3 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_82e5dd511e11a12cdc215994b58267d3" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_82e5dd511e11a12cdc215994b58267d3 = L.map(
+                "map_82e5dd511e11a12cdc215994b58267d3",
+                {
+                    center: [40.72225830706494, -73.97949613948346],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_bd344ce140063e794987564b41ef3f44 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_bd344ce140063e794987564b41ef3f44.addTo(map_82e5dd511e11a12cdc215994b58267d3);
+        
+    
+            var marker_7331637cf9fb04de56b2078c13822be1 = L.marker(
+                [40.76087502, -74.00277668],
+                {
+}
+            ).addTo(map_82e5dd511e11a12cdc215994b58267d3);
+        
+    
+            var icon_b2902f76a7408fb3df7aea479614432b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "#ff0000",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_08a54467012bb54e8ca6ace04874514e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_628b69a4a6f2055db960fd04af10e2fd = $(`<div id="html_628b69a4a6f2055db960fd04af10e2fd" style="width: 100.0%; height: 100.0%;">         <b>Central Node for Cluster 0</b><br>         ------------------------------------<br>         <b>Station ID:</b> 514.0<br>         <b>Betweenness:</b> 0.0020<br>         <b>Degree:</b> 0.7375         </div>`)[0];
+                popup_08a54467012bb54e8ca6ace04874514e.setContent(html_628b69a4a6f2055db960fd04af10e2fd);
+            
+        
+
+        marker_7331637cf9fb04de56b2078c13822be1.bindPopup(popup_08a54467012bb54e8ca6ace04874514e)
+        ;
+
+        
+    
+    
+            marker_7331637cf9fb04de56b2078c13822be1.bindTooltip(
+                `<div>
+                     Central Node (Cluster 0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7331637cf9fb04de56b2078c13822be1.setIcon(icon_b2902f76a7408fb3df7aea479614432b);
+            
+    
+            var marker_2ba75b85c0f7c817fc9caf59d0022d69 = L.marker(
+                [40.73291553, -74.00711384],
+                {
+}
+            ).addTo(map_82e5dd511e11a12cdc215994b58267d3);
+        
+    
+            var icon_c65c040fdcec4e0f27c8c758899dd96c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "#ff6400",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e9b38aef4cd3390342feddca50cff364 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d98dbd96a26ed2e394a5f1f58c829619 = $(`<div id="html_d98dbd96a26ed2e394a5f1f58c829619" style="width: 100.0%; height: 100.0%;">         <b>Central Node for Cluster 1</b><br>         ------------------------------------<br>         <b>Station ID:</b> 358.0<br>         <b>Betweenness:</b> 0.0053<br>         <b>Degree:</b> 0.8040         </div>`)[0];
+                popup_e9b38aef4cd3390342feddca50cff364.setContent(html_d98dbd96a26ed2e394a5f1f58c829619);
+            
+        
+
+        marker_2ba75b85c0f7c817fc9caf59d0022d69.bindPopup(popup_e9b38aef4cd3390342feddca50cff364)
+        ;
+
+        
+    
+    
+            marker_2ba75b85c0f7c817fc9caf59d0022d69.bindTooltip(
+                `<div>
+                     Central Node (Cluster 1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2ba75b85c0f7c817fc9caf59d0022d69.setIcon(icon_c65c040fdcec4e0f27c8c758899dd96c);
+            
+    
+            var marker_699a0e56ddfc1731629402f104c3e703 = L.marker(
+                [40.695065, -73.987167],
+                {
+}
+            ).addTo(map_82e5dd511e11a12cdc215994b58267d3);
+        
+    
+            var icon_e4206e06fba184eed7dafd538087ccd1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "#ffc900",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f6b9e776a2dd627ca3e0e1009a74cc88 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_db85daf2bb7d167f2a9230900e98e975 = $(`<div id="html_db85daf2bb7d167f2a9230900e98e975" style="width: 100.0%; height: 100.0%;">         <b>Central Node for Cluster 2</b><br>         ------------------------------------<br>         <b>Station ID:</b> 392.0<br>         <b>Betweenness:</b> 0.0009<br>         <b>Degree:</b> 0.7637         </div>`)[0];
+                popup_f6b9e776a2dd627ca3e0e1009a74cc88.setContent(html_db85daf2bb7d167f2a9230900e98e975);
+            
+        
+
+        marker_699a0e56ddfc1731629402f104c3e703.bindPopup(popup_f6b9e776a2dd627ca3e0e1009a74cc88)
+        ;
+
+        
+    
+    
+            marker_699a0e56ddfc1731629402f104c3e703.bindTooltip(
+                `<div>
+                     Central Node (Cluster 2)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_699a0e56ddfc1731629402f104c3e703.setIcon(icon_e4206e06fba184eed7dafd538087ccd1);
+            
+    
+            var marker_8862d3b5be62b9f19ca965e431eb709d = L.marker(
+                [40.75110165, -73.94073717],
+                {
+}
+            ).addTo(map_82e5dd511e11a12cdc215994b58267d3);
+        
+    
+            var icon_20a8c49c4d50e0c6f4516dd7cea8463a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "#d1ff00",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e434f9494c83833d00ee21bb510b14f5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8d477d719678262ce1f9b194bc481086 = $(`<div id="html_8d477d719678262ce1f9b194bc481086" style="width: 100.0%; height: 100.0%;">         <b>Central Node for Cluster 3</b><br>         ------------------------------------<br>         <b>Station ID:</b> 3129.0<br>         <b>Betweenness:</b> 0.0038<br>         <b>Degree:</b> 0.8242         </div>`)[0];
+                popup_e434f9494c83833d00ee21bb510b14f5.setContent(html_8d477d719678262ce1f9b194bc481086);
+            
+        
+
+        marker_8862d3b5be62b9f19ca965e431eb709d.bindPopup(popup_e434f9494c83833d00ee21bb510b14f5)
+        ;
+
+        
+    
+    
+            marker_8862d3b5be62b9f19ca965e431eb709d.bindTooltip(
+                `<div>
+                     Central Node (Cluster 3)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8862d3b5be62b9f19ca965e431eb709d.setIcon(icon_20a8c49c4d50e0c6f4516dd7cea8463a);
+            
+    
+            var marker_a07a701f37fc8e3e9e783b5d67c76578 = L.marker(
+                [40.75660359, -73.9979009],
+                {
+}
+            ).addTo(map_82e5dd511e11a12cdc215994b58267d3);
+        
+    
+            var icon_89242c42a0fe2d511848fd08c4aca553 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "#6cff00",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c46092b749e302d39f5faac2fad25dd2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_957e452a264493770aaa93204bc0023f = $(`<div id="html_957e452a264493770aaa93204bc0023f" style="width: 100.0%; height: 100.0%;">         <b>Central Node for Cluster 4</b><br>         ------------------------------------<br>         <b>Station ID:</b> 448.0<br>         <b>Betweenness:</b> 0.0036<br>         <b>Degree:</b> 0.6781         </div>`)[0];
+                popup_c46092b749e302d39f5faac2fad25dd2.setContent(html_957e452a264493770aaa93204bc0023f);
+            
+        
+
+        marker_a07a701f37fc8e3e9e783b5d67c76578.bindPopup(popup_c46092b749e302d39f5faac2fad25dd2)
+        ;
+
+        
+    
+    
+            marker_a07a701f37fc8e3e9e783b5d67c76578.bindTooltip(
+                `<div>
+                     Central Node (Cluster 4)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a07a701f37fc8e3e9e783b5d67c76578.setIcon(icon_89242c42a0fe2d511848fd08c4aca553);
+            
+    
+            var marker_db4fd34ab85581ffc03b4c91c5df4c5d = L.marker(
+                [40.751047, -73.93796999999999],
+                {
+}
+            ).addTo(map_82e5dd511e11a12cdc215994b58267d3);
+        
+    
+            var icon_07cea17b9a38b49881f92a38204c6be1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "#08ff00",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_beb8f8c21dc8a204d8c7fcd2550844f9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_374a1c6902fba251c8c2dd100aa00200 = $(`<div id="html_374a1c6902fba251c8c2dd100aa00200" style="width: 100.0%; height: 100.0%;">         <b>Central Node for Cluster 5</b><br>         ------------------------------------<br>         <b>Station ID:</b> 3555.0<br>         <b>Betweenness:</b> 0.0006<br>         <b>Degree:</b> 0.5831         </div>`)[0];
+                popup_beb8f8c21dc8a204d8c7fcd2550844f9.setContent(html_374a1c6902fba251c8c2dd100aa00200);
+            
+        
+
+        marker_db4fd34ab85581ffc03b4c91c5df4c5d.bindPopup(popup_beb8f8c21dc8a204d8c7fcd2550844f9)
+        ;
+
+        
+    
+    
+            marker_db4fd34ab85581ffc03b4c91c5df4c5d.bindTooltip(
+                `<div>
+                     Central Node (Cluster 5)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_db4fd34ab85581ffc03b4c91c5df4c5d.setIcon(icon_07cea17b9a38b49881f92a38204c6be1);
+            
+    
+            var marker_3f86bbe9cd41608350ceead96c36e232 = L.marker(
+                [40.7612274, -73.96094022],
+                {
+}
+            ).addTo(map_82e5dd511e11a12cdc215994b58267d3);
+        
+    
+            var icon_b7f4891a0805a200b263d3b6083ceeee = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "#00ff5c",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e44a1605269b2a740c837e1443c8aec0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_381f655d38805024719fef0b39f54e83 = $(`<div id="html_381f655d38805024719fef0b39f54e83" style="width: 100.0%; height: 100.0%;">         <b>Central Node for Cluster 6</b><br>         ------------------------------------<br>         <b>Station ID:</b> 3142.0<br>         <b>Betweenness:</b> 0.0012<br>         <b>Degree:</b> 0.7981         </div>`)[0];
+                popup_e44a1605269b2a740c837e1443c8aec0.setContent(html_381f655d38805024719fef0b39f54e83);
+            
+        
+
+        marker_3f86bbe9cd41608350ceead96c36e232.bindPopup(popup_e44a1605269b2a740c837e1443c8aec0)
+        ;
+
+        
+    
+    
+            marker_3f86bbe9cd41608350ceead96c36e232.bindTooltip(
+                `<div>
+                     Central Node (Cluster 6)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3f86bbe9cd41608350ceead96c36e232.setIcon(icon_b7f4891a0805a200b263d3b6083ceeee);
+            
+    
+            var marker_10be0a0ace3d044f6f4f0406d134b44a = L.marker(
+                [40.69681963, -73.93756926],
+                {
+}
+            ).addTo(map_82e5dd511e11a12cdc215994b58267d3);
+        
+    
+            var icon_de58523a57a8469fab54646df08f7d10 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "#00ffc1",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6d5f8ebd6b353a204a2b3d704c05c4d4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ee2fae92103da3dc1ea8b1e15ad558b4 = $(`<div id="html_ee2fae92103da3dc1ea8b1e15ad558b4" style="width: 100.0%; height: 100.0%;">         <b>Central Node for Cluster 7</b><br>         ------------------------------------<br>         <b>Station ID:</b> 3064.0<br>         <b>Betweenness:</b> 0.0006<br>         <b>Degree:</b> 0.6865         </div>`)[0];
+                popup_6d5f8ebd6b353a204a2b3d704c05c4d4.setContent(html_ee2fae92103da3dc1ea8b1e15ad558b4);
+            
+        
+
+        marker_10be0a0ace3d044f6f4f0406d134b44a.bindPopup(popup_6d5f8ebd6b353a204a2b3d704c05c4d4)
+        ;
+
+        
+    
+    
+            marker_10be0a0ace3d044f6f4f0406d134b44a.bindTooltip(
+                `<div>
+                     Central Node (Cluster 7)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_10be0a0ace3d044f6f4f0406d134b44a.setIcon(icon_de58523a57a8469fab54646df08f7d10);
+            
+    
+            var marker_572a3189dd511b636734b859d3c92b63 = L.marker(
+                [40.69231660719192, -74.01486575603484],
+                {
+}
+            ).addTo(map_82e5dd511e11a12cdc215994b58267d3);
+        
+    
+            var icon_5ddcad69706b5323fc9dde09733c6048 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "#00d9ff",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bf64c0f426898b23340d589783faf0de = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_54c5c9740455c95a25a9f78dccd986a9 = $(`<div id="html_54c5c9740455c95a25a9f78dccd986a9" style="width: 100.0%; height: 100.0%;">         <b>Central Node for Cluster 8</b><br>         ------------------------------------<br>         <b>Station ID:</b> 3254.0<br>         <b>Betweenness:</b> 0.0000<br>         <b>Degree:</b> 0.0855         </div>`)[0];
+                popup_bf64c0f426898b23340d589783faf0de.setContent(html_54c5c9740455c95a25a9f78dccd986a9);
+            
+        
+
+        marker_572a3189dd511b636734b859d3c92b63.bindPopup(popup_bf64c0f426898b23340d589783faf0de)
+        ;
+
+        
+    
+    
+            marker_572a3189dd511b636734b859d3c92b63.bindTooltip(
+                `<div>
+                     Central Node (Cluster 8)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_572a3189dd511b636734b859d3c92b63.setIcon(icon_5ddcad69706b5323fc9dde09733c6048);
+            
+    
+            var marker_f93480feeb52ac1c4b8acd122f4938db = L.marker(
+                [40.710451, -73.960876],
+                {
+}
+            ).addTo(map_82e5dd511e11a12cdc215994b58267d3);
+        
+    
+            var icon_82d5304a3b5f28640400dc36765a3eae = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "#0074ff",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7f53ceacbfc78ef8d5b8d37bc2a46786 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_846883e208ee015d10de6fd0f404987d = $(`<div id="html_846883e208ee015d10de6fd0f404987d" style="width: 100.0%; height: 100.0%;">         <b>Central Node for Cluster 9</b><br>         ------------------------------------<br>         <b>Station ID:</b> 532.0<br>         <b>Betweenness:</b> 0.0015<br>         <b>Degree:</b> 0.8361         </div>`)[0];
+                popup_7f53ceacbfc78ef8d5b8d37bc2a46786.setContent(html_846883e208ee015d10de6fd0f404987d);
+            
+        
+
+        marker_f93480feeb52ac1c4b8acd122f4938db.bindPopup(popup_7f53ceacbfc78ef8d5b8d37bc2a46786)
+        ;
+
+        
+    
+    
+            marker_f93480feeb52ac1c4b8acd122f4938db.bindTooltip(
+                `<div>
+                     Central Node (Cluster 9)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f93480feeb52ac1c4b8acd122f4938db.setIcon(icon_82d5304a3b5f28640400dc36765a3eae);
+            
+    
+            var marker_aec345d4f9b929848f808ae641315ec9 = L.marker(
+                [40.81439443791581, -73.95324736833571],
+                {
+}
+            ).addTo(map_82e5dd511e11a12cdc215994b58267d3);
+        
+    
+            var icon_85477aca9ee30adcbf24d3b058713244 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "#0010ff",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f261e0c3e5b4516a66641646accc8feb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a541b6e8cb558111c574d64fb5716f22 = $(`<div id="html_a541b6e8cb558111c574d64fb5716f22" style="width: 100.0%; height: 100.0%;">         <b>Central Node for Cluster 10</b><br>         ------------------------------------<br>         <b>Station ID:</b> 3649.0<br>         <b>Betweenness:</b> 0.0006<br>         <b>Degree:</b> 0.4525         </div>`)[0];
+                popup_f261e0c3e5b4516a66641646accc8feb.setContent(html_a541b6e8cb558111c574d64fb5716f22);
+            
+        
+
+        marker_aec345d4f9b929848f808ae641315ec9.bindPopup(popup_f261e0c3e5b4516a66641646accc8feb)
+        ;
+
+        
+    
+    
+            marker_aec345d4f9b929848f808ae641315ec9.bindTooltip(
+                `<div>
+                     Central Node (Cluster 10)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_aec345d4f9b929848f808ae641315ec9.setIcon(icon_85477aca9ee30adcbf24d3b058713244);
+            
+    
+            var marker_45e60726085d015d47f571ecfd7968b1 = L.marker(
+                [40.68323865460341, -73.96599590778352],
+                {
+}
+            ).addTo(map_82e5dd511e11a12cdc215994b58267d3);
+        
+    
+            var icon_8bd2492eddbe52e5d44de92388feaf15 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "#5400ff",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_43e0840e33058060257dd7a44de068d9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e3b9f709bddfac4062642f00f6d79baf = $(`<div id="html_e3b9f709bddfac4062642f00f6d79baf" style="width: 100.0%; height: 100.0%;">         <b>Central Node for Cluster 11</b><br>         ------------------------------------<br>         <b>Station ID:</b> 3637.0<br>         <b>Betweenness:</b> 0.0008<br>         <b>Degree:</b> 0.6045         </div>`)[0];
+                popup_43e0840e33058060257dd7a44de068d9.setContent(html_e3b9f709bddfac4062642f00f6d79baf);
+            
+        
+
+        marker_45e60726085d015d47f571ecfd7968b1.bindPopup(popup_43e0840e33058060257dd7a44de068d9)
+        ;
+
+        
+    
+    
+            marker_45e60726085d015d47f571ecfd7968b1.bindTooltip(
+                `<div>
+                     Central Node (Cluster 11)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_45e60726085d015d47f571ecfd7968b1.setIcon(icon_8bd2492eddbe52e5d44de92388feaf15);
+            
+    
+            var marker_06916935ff3a879461e2d7c573f2f862 = L.marker(
+                [40.66906013501107, -73.99463653564453],
+                {
+}
+            ).addTo(map_82e5dd511e11a12cdc215994b58267d3);
+        
+    
+            var icon_4b37d0cb560822f461e72c377b17d37a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "#b900ff",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_26088bb6fc850ba01c3aadb7ee4b6f0e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_90d92de73d2afbb56fa2e2694d410e38 = $(`<div id="html_90d92de73d2afbb56fa2e2694d410e38" style="width: 100.0%; height: 100.0%;">         <b>Central Node for Cluster 12</b><br>         ------------------------------------<br>         <b>Station ID:</b> 3432.0<br>         <b>Betweenness:</b> 0.0025<br>         <b>Degree:</b> 0.1876         </div>`)[0];
+                popup_26088bb6fc850ba01c3aadb7ee4b6f0e.setContent(html_90d92de73d2afbb56fa2e2694d410e38);
+            
+        
+
+        marker_06916935ff3a879461e2d7c573f2f862.bindPopup(popup_26088bb6fc850ba01c3aadb7ee4b6f0e)
+        ;
+
+        
+    
+    
+            marker_06916935ff3a879461e2d7c573f2f862.bindTooltip(
+                `<div>
+                     Central Node (Cluster 12)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_06916935ff3a879461e2d7c573f2f862.setIcon(icon_4b37d0cb560822f461e72c377b17d37a);
+            
+    
+            var marker_6ff0508d3dca0db546a88421df789a52 = L.marker(
+                [40.66290776831685, -73.99972200393677],
+                {
+}
+            ).addTo(map_82e5dd511e11a12cdc215994b58267d3);
+        
+    
+            var icon_9aaee5e8c5ab2fa884a602a93492b1ae = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "#ff00e1",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8d0628c97013cc155e2e661cd8613241 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3b5a8f1abb80e2dd0fa692c41cfa612a = $(`<div id="html_3b5a8f1abb80e2dd0fa692c41cfa612a" style="width: 100.0%; height: 100.0%;">         <b>Central Node for Cluster 13</b><br>         ------------------------------------<br>         <b>Station ID:</b> 3036.0<br>         <b>Betweenness:</b> 0.0000<br>         <b>Degree:</b> 0.0024         </div>`)[0];
+                popup_8d0628c97013cc155e2e661cd8613241.setContent(html_3b5a8f1abb80e2dd0fa692c41cfa612a);
+            
+        
+
+        marker_6ff0508d3dca0db546a88421df789a52.bindPopup(popup_8d0628c97013cc155e2e661cd8613241)
+        ;
+
+        
+    
+    
+            marker_6ff0508d3dca0db546a88421df789a52.bindTooltip(
+                `<div>
+                     Central Node (Cluster 13)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6ff0508d3dca0db546a88421df789a52.setIcon(icon_9aaee5e8c5ab2fa884a602a93492b1ae);
+            
+    
+            var marker_f6ac33f4d60265e1c1ffe2d701becf82 = L.marker(
+                [40.70277159, -73.99383605],
+                {
+}
+            ).addTo(map_82e5dd511e11a12cdc215994b58267d3);
+        
+    
+            var icon_76a731f427d20cbdbb00bac5c8f76124 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "#ff007c",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_49595b6702bd3e4c435e518aebafacd8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_82ab70666649befc2b44baa9ccd18446 = $(`<div id="html_82ab70666649befc2b44baa9ccd18446" style="width: 100.0%; height: 100.0%;">         <b>Central Node for Cluster 14</b><br>         ------------------------------------<br>         <b>Station ID:</b> 217.0<br>         <b>Betweenness:</b> 0.0008<br>         <b>Degree:</b> 0.7280         </div>`)[0];
+                popup_49595b6702bd3e4c435e518aebafacd8.setContent(html_82ab70666649befc2b44baa9ccd18446);
+            
+        
+
+        marker_f6ac33f4d60265e1c1ffe2d701becf82.bindPopup(popup_49595b6702bd3e4c435e518aebafacd8)
+        ;
+
+        
+    
+    
+            marker_f6ac33f4d60265e1c1ffe2d701becf82.bindTooltip(
+                `<div>
+                     Central Node (Cluster 14)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f6ac33f4d60265e1c1ffe2d701becf82.setIcon(icon_76a731f427d20cbdbb00bac5c8f76124);
+            
+    
+            var marker_51616913fed050463f6807b27ee6ccdb = L.marker(
+                [40.7153379, -74.01658354],
+                {
+}
+            ).addTo(map_82e5dd511e11a12cdc215994b58267d3);
+        
+    
+            var icon_b612ffe2d3f7997238ad0ea3013427e0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "#ff0018",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_064f9e5d7c6c6bc8aad68ea285f142a2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7a5899d2ca3ea9064271f126bd29a577 = $(`<div id="html_7a5899d2ca3ea9064271f126bd29a577" style="width: 100.0%; height: 100.0%;">         <b>Central Node for Cluster 15</b><br>         ------------------------------------<br>         <b>Station ID:</b> 327.0<br>         <b>Betweenness:</b> 0.0085<br>         <b>Degree:</b> 0.7458         </div>`)[0];
+                popup_064f9e5d7c6c6bc8aad68ea285f142a2.setContent(html_7a5899d2ca3ea9064271f126bd29a577);
+            
+        
+
+        marker_51616913fed050463f6807b27ee6ccdb.bindPopup(popup_064f9e5d7c6c6bc8aad68ea285f142a2)
+        ;
+
+        
+    
+    
+            marker_51616913fed050463f6807b27ee6ccdb.bindTooltip(
+                `<div>
+                     Central Node (Cluster 15)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_51616913fed050463f6807b27ee6ccdb.setIcon(icon_b612ffe2d3f7997238ad0ea3013427e0);
+            
+</script>
+</html>

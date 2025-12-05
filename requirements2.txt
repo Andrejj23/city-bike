@@ -16,9 +16,11 @@ flatbuffers==25.9.23
 folium==0.20.0
 fonttools==4.60.1
 gast==0.6.0
+gensim==4.4.0
 google-pasta==0.2.0
 grpcio==1.76.0
 h5py==3.15.1
+holidays==0.85
 idna==3.11
 importlib_metadata==8.7.0
 ipykernel==7.1.0
@@ -38,10 +40,11 @@ MarkupSafe==3.0.3
 matplotlib==3.10.7
 matplotlib-inline==0.2.1
 mdurl==0.1.2
-meteostat==1.7.6
 ml_dtypes==0.5.4
 namex==0.1.0
 nest-asyncio==1.6.0
+networkx==3.5
+node2vec==0.5.0
 numpy==2.3.4
 opt_einsum==3.4.0
 optree==0.18.0
@@ -67,6 +70,7 @@ scipy==1.16.3
 seaborn==0.13.2
 setuptools==80.9.0
 six==1.17.0
+smart_open==7.4.4
 stack-data==0.6.3
 statsmodels==0.14.5
 tensorboard==2.20.0
